@@ -1,0 +1,27 @@
+{
+  "name": "@prekladyher/node-oodle-data",
+  "version": "1.0.0",
+  "description": "Oodle Data compression binding.",
+  "type": "module",
+  "exports": "./index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "lib/*",
+    "index.js",
+    "index.d.ts"
+  ],
+  "gypfile": true,
+  "scripts": {
+    "install": "node -p '\"Preventing gyp build...\"'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prekladyher/node-oodle-data.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "node-gyp": "^9.3.1",
+    "node-addon-api": "^6.0.0"
+  }
+}
