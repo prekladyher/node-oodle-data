@@ -7,7 +7,7 @@ const compressed = Buffer.alloc(input.length + 16);
 
 console.log(`Encoding data of length: ${input.length}`);
 
-const compressedLength = noodle.Compress(input, input.length, compressed);
+const compressedLength = noodle.Compress(9 /* Mermaid */, input, input.length, compressed);
 
 console.log(`Compressed to length: ${compressedLength}`)
 

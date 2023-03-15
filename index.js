@@ -1,3 +1,5 @@
 import { createRequire } from "module";
 
-export default createRequire(import.meta.url)(`./lib/${process.platform}/noodle.node`);
+const noodle = createRequire(import.meta.url)(`./lib/${process.platform}/noodle.node`);
+
+export default noodle;

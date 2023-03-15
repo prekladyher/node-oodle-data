@@ -19,8 +19,14 @@
         'MACOSX_DEPLOYMENT_TARGET': '10.7'
       },
       'msvs_settings': {
-        'VCCLCompilerTool': { 'ExceptionHandling': 1 },
+        'VCLinkerTool': {
+          'AdditionalOptions': [ '/NODEFAULTLIB:MSVCRT' ],
+        },
+        'VCCLCompilerTool': {
+          'ExceptionHandling': 1,
+          'RuntimeLibrary': 0
+        },
       }
     }
-  ]
+  ],
 }

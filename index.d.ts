@@ -18,9 +18,10 @@ declare const Noodle: {
      * @param input Input compressed data array.
      * @param output Output raw data array.
      * @param length Output data byte length (has to be known).
+     * @param context Number of bytes of preceding context available in the output array buffer.
      * @return Raw output data length or zero if unable to decompress 
      */
-    Decompress: (input: Uint8Array, output: Uint8Array, length: number) => number;
+    Decompress: (input: Uint8Array, output: Uint8Array, length: number, context = 0) => number;
 
     /**
      * Get compressor reference for the given chunk.
