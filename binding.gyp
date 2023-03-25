@@ -5,11 +5,11 @@
       'sources': [ 'src/noodle.cc' ],
       'include_dirs': [
         "<!@(node -p \"require('node-addon-api').include\")",
-        "N:/games/epic/UE_4.27/Engine/Plugins/Compression/OodleData/Sdks/2.9.0/include/"
+        "/Users/horal/Documents/repository/l10n-toolbox/work/OodleData/Sdks/2.9.0/include/"
       ],
       'dependencies': ["<!(node -p \"require('node-addon-api').gyp\")"],
       'libraries': [
-        "N:/games/epic/UE_4.27/Engine/Plugins/Compression/OodleData/Sdks/2.9.0/lib/Win64/oo2core_win64.lib"
+        "/Users/horal/Documents/repository/l10n-toolbox/work/OodleData/Sdks/2.9.0/lib/Linux/liboo2corelinux64.a"
       ],
       'cflags!': [ '-fno-exceptions' ],
       'cflags_cc!': [ '-fno-exceptions' ],
